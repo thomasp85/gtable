@@ -22,7 +22,7 @@ list_2_df <- function(data, .check = FALSE) {
 }
 
 fget <- function(x, .from) {
-  unclass(.from)[[x]]
+  .subset2(.from, x)
 }
 fset <- function(x, value, .in) {
   cl <- class(.in)
